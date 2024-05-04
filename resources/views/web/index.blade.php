@@ -1,6 +1,9 @@
 @extends('layout.layout')
 	<body>
+
 		
+
+
 		<div id="site-content">
 			<header class="site-header">
 				
@@ -11,19 +14,36 @@
 							<h1 class="site-title">{{config('app.name')}}</h1>
 						</a> <!-- #branding -->
 						
-						
 						<div class="main-navigation">
-							<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+
+							<button type="button" id= "playSound" class="menu-toggle"><i class="fa fa-bars"></i></button>
+
+
 							<ul class="menu">
-								<li class="menu-item current-menu-item"><a href="http://127.0.0.1:8000/"><img src="web/dummy/home.png" alt=""></a></li>
-								<li class="menu-item"><a href="http://127.0.0.1:8000/divi"><img src="web/dummy/division.png" alt=""></a></li>
-								
-								<li class="menu-item"><a href="http://127.0.0.1:8000/multi"><img src="web/dummy/multiplication.png" alt=""></a></li>
-								<li class="menu-item"><a href="http://127.0.0.1:8000/add"><img src="web/dummy/plus.png" alt=""></a></li>
-								<li class="menu-item"><a href="http://127.0.0.1:8000/sub"><img src="web/dummy/minus.png" alt=""></a></li>
-								<li class="menu-item"><a href="http://127.0.0.1:8000/random"><img src="web/dummy/dice.png" alt=""></a></li>
+							<audio id="playSoundHome" src="web/audio/clickdrop.wav"></audio>
+
+								<li class="menu-item current-menu-item"><a href="http://127.0.0.1:8000/"><img src="web/dummy/home.png"  onclick="document.getElementById('playSoundHome').play()"> </a></li>
+								<li class="menu-item"><a id="playSoundHome" href="http://127.0.0.1:8000/divi"><img src="web/dummy/division.png" onclick="document.getElementById('playSoundHome').play()" alt=""></a></li>
+								<li class="menu-item"><a href="http://127.0.0.1:8000/multi"><img src="web/dummy/multiplication.png" onclick="document.getElementById('playSoundHome').play()" alt=""></a></li>
+								<li class="menu-item"><a href="http://127.0.0.1:8000/add"><img src="web/dummy/plus.png" onclick="document.getElementById('playSoundHome').play()"alt=""></a></li>
+								<li class="menu-item"><a href="http://127.0.0.1:8000/sub"><img src="web/dummy/minus.png" onclick="document.getElementById('playSoundHome').play()"alt=""></a></li>
+								<li class="menu-item"><a href="http://127.0.0.1:8000/random"><img src="web/dummy/dice.png" onclick="document.getElementById('playSoundHome').play()"alt=""></a></li>
 
 							</ul> <!-- .menu -->
+
+							<script>
+									const clickSound = new Audio('web/audio/clickdrop.wav');
+									const playSound_btn = document.getElementById('playSound');
+       								const divi_link = document.getElementById('divi_link');
+
+
+									playSound_btn.onclick = () => {
+										clickSound.play();
+									};
+
+									
+
+							</script>
 						</div> <!-- .main-navigation -->
 
 							
@@ -70,6 +90,7 @@
 				</div> <!-- .home-slider -->
 			</header>
 		</div>
+
   
 	
 	</body>

@@ -10,6 +10,9 @@ const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 
+// const start_btn = document.querySelector(".start_btn button");
+
+
 // sound objects
 const clickSound = new Audio('web/audio/clickdrop.wav');
 const clickExitSound = new Audio('web/audio/clickexit.wav');
@@ -42,11 +45,11 @@ continue_btn.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); //show quiz box
     showQuetions(0); //calling showQestions function
     queCounter(1); //passing 1 parameter to queCounter
-    startTimer(15); //calling startTimer function
+    startTimer(10); //calling startTimer function
     startTimerLine(0); //calling startTimerLine function
 }
 
-let timeValue =  15;
+let timeValue =  10;
 let que_count = 0;
 let que_numb = 1;
 let userScore = 0;
@@ -62,7 +65,7 @@ restart_quiz.onclick = ()=>{
     clickReplaySound.play();
     quiz_box.classList.add("activeQuiz"); //show quiz box
     result_box.classList.remove("activeResult"); //hide result box
-    timeValue = 15; 
+    timeValue = 10; 
     que_count = 0;
     que_numb = 1;
     userScore = 0;

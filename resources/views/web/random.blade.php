@@ -13,7 +13,7 @@
     <div class="info_box">
         <div class="info-title"><span>Random Drills Rules Are:</span></div>
         <div class="info-list">
-            <div class="info">1. You will have only <span>15 seconds</span> per each drill.</div>
+            <div class="info">1. You will have only <span>10 seconds</span> per each drill.</div>
             <div class="info">2. These are <span>Random</span> Drills.</div>
             <div class="info">3. Once you select your answer, it can't be undone.</div>
             <div class="info">4. You can't select any option once time goes off.</div>
@@ -33,7 +33,7 @@
             <div class="title">Awesome Quiz Application</div>
             <div class="timer">
                 <div class="time_left_txt">Time Left</div>
-                <div class="timer_sec">15</div>
+                <div class="timer_sec">10</div>
             </div>
             <div class="time_line"></div>
         </header>
