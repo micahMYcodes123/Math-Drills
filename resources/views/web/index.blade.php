@@ -23,11 +23,14 @@
 							<audio id="playSoundHome" src="web/audio/clickdrop.wav"></audio>
 
 								<li class="menu-item current-menu-item"><a href="http://127.0.0.1:8000/"><img src="web/dummy/home.png"  onclick="document.getElementById('playSoundHome').play()"> </a></li>
+								<li class="menu-item"><a href="http://127.0.0.1:8000/random"><img src="web/dummy/dice.png" onclick="document.getElementById('playSoundHome').play()"alt=""></a></li>
 								<li class="menu-item"><a id="playSoundHome" href="http://127.0.0.1:8000/divi"><img src="web/dummy/division.png" onclick="document.getElementById('playSoundHome').play()" alt=""></a></li>
 								<li class="menu-item"><a href="http://127.0.0.1:8000/multi"><img src="web/dummy/multiplication.png" onclick="document.getElementById('playSoundHome').play()" alt=""></a></li>
 								<li class="menu-item"><a href="http://127.0.0.1:8000/add"><img src="web/dummy/plus.png" onclick="document.getElementById('playSoundHome').play()"alt=""></a></li>
 								<li class="menu-item"><a href="http://127.0.0.1:8000/sub"><img src="web/dummy/minus.png" onclick="document.getElementById('playSoundHome').play()"alt=""></a></li>
-								<li class="menu-item"><a href="http://127.0.0.1:8000/random"><img src="web/dummy/dice.png" onclick="document.getElementById('playSoundHome').play()"alt=""></a></li>
+
+								<li class="menu-item"><a href="http://127.0.0.1:8000/register"><img src="web/dummy/register.png" onclick="document.getElementById('playSoundHome').play()"alt=""></a></li>
+								<li class="menu-item"><a href="http://127.0.0.1:8000/login"><img src="web/dummy/log-in.png" onclick="document.getElementById('playSoundHome').play()"alt=""></a></li>
 
 							</ul> <!-- .menu -->
 
