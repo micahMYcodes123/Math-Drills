@@ -15,27 +15,38 @@ Route::post('/login', [AuthController::class , 'authoticate']) ->name('login.cre
 
 
 
-Route::get('/random', function(){
 
-    return view('web.random');
-});
+Route::get('/random', [DashboardController::class , 'random']) ->name('random')->middleware('auth');
 
-Route::get('/add', function(){
+// Route::get('/random', function(){
 
-    return view('web.add');
-});
+//     return view('web.random');
+// });
 
-Route::get('/divi', function(){
+Route::get('/add', [DashboardController::class , 'add']) ->name('add')->middleware('auth');
 
-    return view('web.divi');
-});
 
-Route::get('/sub', function(){
+// Route::get('/add', function(){
 
-    return view('web.sub');
-});
+//     return view('web.add');
+// });
+Route::get('/divi', [DashboardController::class , 'divi']) ->name('divi')->middleware('auth');
 
-Route::get('/multi', function(){
+// Route::get('/divi', function(){
 
-    return view('web.multi');
-});
+//     return view('web.divi');
+// });
+
+Route::get('/sub', [DashboardController::class , 'sub']) ->name('sub')->middleware('auth');
+
+// Route::get('/sub', function(){
+
+//     return view('web.sub');
+// });
+
+Route::get('/multi', [DashboardController::class , 'multi']) ->name('multi')->middleware('auth');
+
+// Route::get('/multi', function(){
+
+//     return view('web.multi');
+// });

@@ -66,7 +66,7 @@ let questions = [
     let num1 = Math.floor(Math.random() * 13); // Generate random number between 0 and 12
     let num2 = Math.floor(Math.random() * 13); // Generate random number between 0 and 12
     
-    questions[i].question = `What is the result of ${num1} * ${num2}?`;
+    questions[i].question = `What is the result of ${num1} X ${num2}?`;
     questions[i].answer = (num1 * num2).toString();
   
     // Generate options
